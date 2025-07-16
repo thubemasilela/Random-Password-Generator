@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="pageContent">
+      <!-- Introduction to the App -->
+      <div id="introductionToApp">
+        <div>
+          <h2>
+            Instantly generate a secure, random password with our online tool
+          </h2>
+        </div>
+        <div>
+          <p id="introductionText">
+            Use our online password generator tool to instantly create a secure,
+            random password
+          </p>
+        </div>
+      </div>
+
+      <!-- Generated password-->
+      <div id="generatedPassword">
+        <input type="text" id="displayPassword" />
+        <button class="copy-refreshBtns" onclick="">
+          <img src="images/copy.svg" />
+        </button>
+        <button class="copy-refreshBtns" onclick="generatePassword()" >
+          <img src="images/refresh-ccw.svg" />
+        </button>
+      </div>
+
+      <!-- Customization-->
+      <div id="customizedPassword">
+        <p id="customPasswordText">Customize your password</p>
+
+        <div id="thinLine">
+          <hr />
+        </div>
+
+        <div id="customSelection">
+          <div class="option-row">
+            <label for="passwordLength">Password Length :</label>
+            <input
+              type="number"
+              id="passwordLength"
+              min="4"
+              max="50"
+              value="4"
+            />
+          </div>
+
+          <div class="option-row">
+            <input type="checkbox" id="uppercase" />
+            <label for="uppercase">Uppercase</label>
+          </div>
+
+          <div class="option-row">
+            <input type="checkbox" id="lowercase" />
+            <label for="lowercase">Lowercase</label>
+          </div>
+
+          <div class="option-row">
+            <input type="checkbox" id="numbers" />
+            <label for="numbers">Numbers</label>
+          </div>
+
+          <div class="option-row">
+            <input type="checkbox" id="symbols" />
+            <label for="symbols">Symbols</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

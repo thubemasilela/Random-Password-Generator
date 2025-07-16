@@ -1,0 +1,117 @@
+/* Ensure the page takes full height and centers content */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+#pageContent {
+  padding: 20px;
+  min-width: 550px;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Introduction to the app */
+#introductionToApp {
+  text-align: center;
+}
+
+h2 {
+  font-size: 45px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  letter-spacing: -0.64px;
+}
+
+#introductionText {
+  font-size: 22px;
+  line-height: 36px;
+  margin-bottom: 20px;
+  letter-spacing: -0.28px;
+}
+
+/* Displaying the generated password */
+#generatedPassword {
+  background-color: rgb(240, 237, 237);
+  border-radius: 10px;
+  height: 95px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#displayPassword {
+  width: 75%;
+  font-size: 25px;
+  border: none;
+  background-color: rgb(240, 237, 237);
+}
+
+input:focus {
+  outline: none;
+}
+
+.copy-refreshBtns {
+  margin-left: 30px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.copy-refreshBtns img {
+  height: 30px;
+  width: 30px;
+}
+
+/* Customizing password */
+#customizedPassword {
+  background-color: rgb(240, 237, 237);
+  border-radius: 10px;
+  padding: 3px 60px 15px 30px;
+  margin-top: 20px;
+}
+
+#customPasswordText {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#thinLine hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+#passwordLength {
+  margin-bottom: 10px;
+  background-color: rgb(240, 237, 237);
+  text-align: center;
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.option-row label {
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.option-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
